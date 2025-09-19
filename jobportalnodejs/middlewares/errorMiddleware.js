@@ -9,6 +9,7 @@ const errorMiddleware = (err, req, res, next) => {
     }
 
 
+
     // Missing Field Error
     if (err.name === 'ValidationError') {
         defaultErrors.statusCode = 400;

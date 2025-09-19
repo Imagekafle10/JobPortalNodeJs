@@ -12,7 +12,7 @@ async function getConn() {
                 user: process.env.USER,
                 password: process.env.PASSWORD,
                 database: process.env.DATABASE
-            }); 
+            });
             console.log("Sql Connected".bgMagenta);
         } catch (error) {
             console.log(`Sql Error ${error}`.bgRed.white);
